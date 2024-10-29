@@ -1,6 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import "./style.css";
-import { Environment, OrbitControls } from "@react-three/drei";
+import { Environment, OrbitControls, ScrollControls } from "@react-three/drei";
 import MacContainer from "./components/MacContainer.jsx";
 
 const App = () => {
@@ -12,7 +12,9 @@ const App = () => {
 					"https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/studio_small_09_2k.hdr",
 				]}
 			/>
-			<MacContainer />
+			<ScrollControls>
+				<MacContainer />
+			</ScrollControls>
 		</Canvas>
 	);
 };
